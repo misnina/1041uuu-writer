@@ -1,0 +1,92 @@
+$a: '../img/a.gif';
+$b: '../img/b.gif';
+$c: '../img/c.gif';
+$d: '../img/d.gif';
+$e: '../img/e.gif';
+$f: '../img/f.gif';
+$g: '../img/g.gif';
+$h: '../img/h.gif';
+$i: '../img/i.gif';
+$j: '../img/j.gif';
+
+@mixin links($link, $hover) {
+  a {
+    text-decoration: none;
+    color: $link;
+    &:visited {
+      color: $link;
+    }
+    &:hover {
+      color: $hover;   
+    }
+    &:active {
+      color: $link;
+    }
+  }
+}
+
+.a {
+  background-image: url($a);
+  color: white;
+  @include links(#A9A9A9, white,);
+}
+
+.b {
+  background-image: url($b);
+  color: black;
+  @include links(#2F4F4F ,#A9A9A9);
+}
+
+.c {
+  background-image: url($c);
+  color: white;
+  @include links(#A9A9A9, white,);
+}
+
+.c {
+  background-image: url($c);
+  color: white;
+  @include links(#A9A9A9, white,);
+}
+
+.d {
+  background-image: url($d);
+  color: white;
+  @include links(#A9A9A9, white,);
+}
+
+.e {
+  background-image: url($e);
+  color: white;
+  @include links(#A9A9A9, white,);
+}
+
+.f {
+  background-image: url($f);
+  color: white;
+  @include links(#A9A9A9, white,);
+}
+
+.g {
+  background-image: url($g);
+  color: white;
+  @include links(#A9A9A9, white,);
+}
+
+.h {
+  background-image: url($h);
+  color: white;
+  @include links(#A9A9A9, white,);
+}
+
+.i {
+  background-image: url($i);
+  color: black;
+  @include links(#2F4F4F ,#A9A9A9);
+}
+
+.j {
+  background-image: url($j);
+  color: white;
+  @include links(#A9A9A9, white,);
+}
